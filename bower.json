@@ -1,0 +1,23 @@
+{
+  "name": "the-van-and-man",
+  "version": "0.1.0",
+  "authors": [
+    "Ashwin Mukhija <achromatic.rainbow@gmail.com>"
+  ],
+  "description": "Frontent dependencies for MVM",
+  "license": "Proprietary",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.3",
+    "normalize.css": "~3.0.2",
+    "bootstrap": "~3.3.1"
+  }
+}
