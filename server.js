@@ -55,7 +55,7 @@ if ('production' === app.get('env')) {
 
 app.use(express.static(publicFolder));
 app.use('/vendor', express.static(path.join(__dirname, 'vendor')));
-app.use(compressor());
+//app.use(compressor());
 
 // Winston normal logging
 app.use(expressWinston.logger({

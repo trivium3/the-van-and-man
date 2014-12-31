@@ -1,0 +1,222 @@
+/**
+ * chat.default.less Main stylesheet for chat page
+ */
+
+@import '../vendor/lesshat/build/lesshat.less';
+@import 'includes/mixins.less';
+
+.fontspring-font-face('SourceSansPro-Regular', 'sourcesanspro-regular');
+.fontspring-font-face('SourceSansPro-Bold', 'sourcesanspro-bold');
+.fontspring-font-face('SourceSansPro-SemiBold', 'sourcesanspro-semibold');
+
+strong {
+  font-weight: normal;
+  font-family: 'SourceSansPro-Bold', sans;
+}
+
+em {
+  font-style: normal;
+}
+
+body {
+  background: #F0F0F0;
+}
+
+.tvm-navbar {
+  margin: 0;
+  width: 100%;
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #FFFFFF;
+  padding: 0;
+  line-height: 30px;
+  vertical-align: bottom;
+  padding-left: 15px;
+  .box-shadow(0px 1px 3px rgba(0, 0, 0, 0.25));
+  .display(flex);
+}
+
+.tvm-brand {
+  color: #333333;
+  font-family: 'SourceSansPro-Bold', sans;
+  font-size: 30px;
+  text-transform: uppercase;
+  padding: 10px 0;
+  width: 40%;
+  em {
+    font-size: 15px;
+    margin-left: 0px;
+  }
+  strong {
+    font-size: 24px;
+    color: #ED2132;
+  }
+  img {
+    margin-top: -6px;
+    margin-right: 8px;
+    .drop-shadow(0 0 3px rgba(0,0,0,0.25));
+  }
+}
+
+.tvm-chat-reminder {
+  width: 60%;
+  color: #333333;
+  font-family: 'SourceSansPro-SemiBold', sans;
+  font-size: 17px;
+  line-height: 40px;
+  padding: 8px 0;
+  vertical-align: middle;
+  text-align: right;
+  i {
+    padding: 0 15px;
+    img {
+      .drop-shadow(0 0 3px rgba(0,0,0,0.25));
+    }
+  }
+  strong {
+    padding-left: 8px;
+  }
+  em {
+    padding-left: 5px;
+    text-transform: capitalize;
+  }
+}
+
+.tvm-chat-main {
+  max-width: 945px;
+  margin: 56px auto 0 auto;
+  width: 100%;
+  .border-radius(5px);
+  padding: 70px 0 30px 0;
+}
+
+.tvm-chat-sidebar {
+  width: 200px;
+  display: inline-block;
+  background-color: #333333;
+  .border-radius(5px 0 0 5px);
+  float: left;
+  height: 535px;
+}
+
+.tvm-side-heading {
+  font-size: 24px;
+  font-family: 'SourceSansPro-SemiBold', sans;
+  text-align: center;
+  text-transform: capitalize;
+  line-height: 49px;
+  vertical-align: middle;
+  color: #FFFFFF;
+  &:after {
+    height: 1px;
+    background: rgba(255,255,255,0.15);
+    width: 75%;
+    content: "\0";
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+.tvm-side-picture {
+  padding: 20px 0;
+  display: block;
+  &:after {
+    height: 1px;
+    background: rgba(255,255,255,0.15);
+    width: 75%;
+    content: "\0";
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+  img {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+.tvm-side-text {
+  font-family: 'SourceSansPro-Regular', sans;
+  text-align: left;
+  color: #FFFFFF;
+  font-size: 16px;
+  padding-left: 30px;
+}
+
+.tvm-chat-body {
+  height: 535px;
+}
+
+.tvm-chat-header {
+  background: url('/images/chat/Cover.png') no-repeat;
+  font-family: 'SourceSansPro-Regular', sans;
+  font-size: 17px;
+  color: #FFFFFF;
+  text-shadow: 1px 1px 4px #000000;
+  .display(flex);
+  .border-radius(0 5px 0 0);
+  padding-top: 63px;
+  padding-left: 15px;
+  & > div {
+    display: inline-block;
+    float: left;
+  }
+}
+
+.tvm-operator-image {
+  margin-bottom: -40px;
+  z-index: 100;
+}
+
+.tvm-operator-headline {
+  padding-top: 30px;
+  margin-left: 15px;
+  margin-right: 10px;
+  margin-top: -5px;
+}
+
+.tvm-operator-name {
+  font-family: 'SourceSansPro-Bold', sans;
+  font-size: 25px;
+
+  img {
+    margin-top: -9px;
+  }
+}
+
+.tvm-chat-social-media {
+  padding-top: 48px;
+  margin-left: 200px;
+  img:first-of-type {
+    margin-right: 8px;
+  }
+}
+
+.tvm-operator-boxes {
+  font-family: 'SourceSansPro-Regular', sans;
+  .display(flex);
+  background: #FFFFFF;
+  div {
+    display: inline-block;
+    float: left;
+    border: 1px solid #CCCCCC;
+    border-right: none;
+    width: 33.33333%;
+    line-height: 53px;
+    vertical-align: middle;
+    font-size: 17px;
+    height: 53px;
+    text-align: center;
+    &:last-of-type {
+      border-right: 1px solid #CCCCCC;
+    }
+  }
+}
+
+.tvm-operator-status {
+  text-align: right !important;
+  padding-right: 40px;
+  font-family: 'SourceSansPro-Bold', sans;
+}

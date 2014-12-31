@@ -10,13 +10,16 @@ html(lang = 'en')
       meta(name = 'viewport', content = 'width=device-width, initial-scale=1.0')
       link(href = '/favicon.ico', rel = 'icon')
       link(href = '/favicon.ico', rel = 'shortcut icon')
-      //bower:css
-      link(rel='stylesheet', href='../vendor/normalize.css/normalize.css')
-      link(rel='stylesheet', href='../vendor/bootstrap/dist/css/bootstrap.css')
-      //endbower
+      block css
+        //bower:css
+        link(rel='stylesheet', href='../vendor/normalize.css/normalize.css')
+        link(rel='stylesheet', href='../vendor/bootstrap/dist/css/bootstrap.css')
+        link(rel='stylesheet', href='../vendor/fontawesome/css/font-awesome.css')
+        //endbower
   body
     block content
-    //bower:js
-    script(src='../vendor/jquery/dist/jquery.js')
-    script(src='../vendor/bootstrap/dist/js/bootstrap.js')
-    //endbower
+    block js
+      //bower:js
+      script(src='../vendor/jquery/dist/jquery.js')
+      script(src='../vendor/bootstrap/dist/js/bootstrap.js')
+      //endbower

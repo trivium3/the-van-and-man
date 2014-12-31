@@ -1,0 +1,70 @@
+@import '../vendor/lesshat/build/lesshat.less';
+
+.olrk-available {
+  background: #FFFFFF;
+  border-right: 1px solid #CCCCCC;
+  border-bottom: 1px solid #CCCCCC;
+  .border-radius(0 0 5px 0);
+  height: 335px !important;
+}
+
+#habla_topbar_div {
+  text-align: center;
+}
+
+.habla_conversation_p_item {
+  max-width: 75%;
+  width: 75%;
+  .border-radius(5px);
+  color: #000000;
+  font-size: 14px;
+  font-family: 'SourceSansPro-Regular', sans;
+  background: #EEEBEB;
+  margin: 0 auto;
+  padding: 10px;
+  margin-bottom: 15px;
+  position: relative;
+  &:before {
+    content: "";
+    position: absolute;
+    border-style: solid;
+    border-width: 5px 5px 5px 0;
+    border-color: transparent #EEEBEB transparent transparent;
+    left: -5px;
+    bottom: 7px;
+  }
+  &.olrk_new_sender {
+    background: #1372CA;
+    color: #FFFFFF;
+    text-align: right;
+    &:before {
+      display: none;
+    }
+    &:after {
+      content: "";
+      position: absolute;
+      border-style: solid;
+      border-width: 5px 0 5px 5px;
+      border-color: transparent transparent transparent #1372CA;
+      right: -5px;
+      bottom: 7px;
+    }
+  }
+}
+
+.hbl_pal_remote_fg {
+  display: none;
+}
+
+.hbl_pal_local_fg {
+  display: none;
+}
+
+#habla_wcsend_input {
+  width: 724px;
+  margin-top: 20px;
+}
+
+#habla_conversation_div {
+  height: 200px;
+}

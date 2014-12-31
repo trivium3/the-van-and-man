@@ -1,0 +1,16 @@
+/**
+ * includes/mixins.less Utility mixins
+ */
+
+.fontspring-font-face(@font-family, @file-path, @weight: normal, @style: normal) {
+  @font-face {
+    font-family: '@{font-family}';
+    src: url('/fonts/@{file-path}.eot');
+    src: url('/fonts/@{file-path}.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/@{file-path}.woff') format('woff'),
+         url('/fonts/@{file-path}.ttf') format('truetype'),
+         url('/fonts/@{file-path}.svg##@{font-family}') format('svg');
+    weight: @weight;
+    style: @style;
+  }
+}
